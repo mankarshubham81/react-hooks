@@ -26,8 +26,14 @@ const HookUseEffect = () => {
         window.addEventListener("resize", () => {
             setScreenWidth(window.innerWidth)
         })
+        console.log("ran useeff")
+
+        return () => {
+            console.log("ran retured")
+            // window.removeEventListener("resize");
+        };
         
-    }, [screenWidth]);
+    }, [count]);
 
     const handleSubstract = () => {
       setCount((prev) => {
