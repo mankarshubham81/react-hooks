@@ -6,9 +6,28 @@ const HookUseEffect = () => {
         id: "abcd", 
     })
 
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
     useEffect(() => {
+        setCount((prev) => {
+            return  {
+                id: "Random",
+                num: 5
+            }
+          })
+        //   setCount({
+        //     id: "Random2",
+        //     num: 2
+        // })
         console.log("this log will display onle at one time");
-    }, [count]);
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            setScreenWidth(window.innerWidth)
+        })
+        
+    }, [screenWidth]);
 
     const handleSubstract = () => {
       setCount((prev) => {
@@ -37,6 +56,8 @@ const HookUseEffect = () => {
       <div >
         <button  onClick={handleSubstract}>-</button>
         <p>{count.num}</p>
+        <p>{count.id}</p>
+        <p>{screenWidth}</p>
         <button  onClick={handleAdd}>+</button>
       </div>
     )
