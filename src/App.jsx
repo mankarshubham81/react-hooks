@@ -6,6 +6,7 @@ import HookUsestatewithObj from './AllHooks/HookUsestatewithObj'
 import HookUseEffect from './AllHooks/HookUseEffect'
 import HookUseMemo from './AllHooks/HookUseMemo'
 import HookUseCallback from './AllHooks/HookUseCallback'
+import HookUseRef from './AllHooks/HookUseRef'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
       {/* <HookUsestatewithObj/> */}
       {/* <HookUseEffect /> */}
       {/* <HookUseMemo/> */}
-      <HookUseCallback/>
+      {/* <HookUseCallback/> */}
+      <HookUseRef/>
     </>
   )
 }
