@@ -10,6 +10,7 @@ import HookUseRef from './AllHooks/HookUseRef'
 import HookUseContext from './AllHooks/HookUseContext'
 import HookUseReducer from './AllHooks/HookUseReducer'
 import HookUseImperativeHandle from './AllHooks/HookUseImperativeHandle'
+import HookUseLayoutEffect from './AllHooks/HookUseLayoutEffect'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,8 @@ function App() {
       {/* <HookUseRef/> */}
       {/* <HookUseContext/> */}
       {/* <HookUseReducer/> */}
-      <HookUseImperativeHandle/>
+      {/* <HookUseImperativeHandle/> */}
+      <HookUseLayoutEffect />
     </>
   )
 }
