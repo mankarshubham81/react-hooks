@@ -8,6 +8,8 @@ import HookUseMemo from './AllHooks/HookUseMemo'
 import HookUseCallback from './AllHooks/HookUseCallback'
 import HookUseRef from './AllHooks/HookUseRef'
 import HookUseContext from './AllHooks/HookUseContext'
+import HookUseReducer from './AllHooks/HookUseReducer'
+import HookUseImperativeHandle from './AllHooks/HookUseImperativeHandle'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +22,9 @@ function App() {
       {/* <HookUseMemo/> */}
       {/* <HookUseCallback/> */}
       {/* <HookUseRef/> */}
-      <HookUseContext/>
+      {/* <HookUseContext/> */}
+      {/* <HookUseReducer/> */}
+      <HookUseImperativeHandle/>
     </>
   )
 }
